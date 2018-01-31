@@ -1,0 +1,24 @@
+{
+  "name": "react-music-player",
+  "version": "1.0.0",
+  "description": "music player bulid by react",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laccey/react-music-player.git"
+  },
+  "keywords": [
+    "webpack",
+    "react",
+    "music-player"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laccey/react-music-player/issues"
+  },
+  "homepage": "https://github.com/Laccey/react-music-player#readme"
+}
