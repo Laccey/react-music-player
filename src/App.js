@@ -1,12 +1,15 @@
 import React from 'react';
 import Header from './components/header';
 import Player from './page/player';
+import MusicList from './page/musicList';
 import { MUSIC_LIST } from './config/config';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 class App extends React.Component{
 	constructor() {
         super();
         this.state = {
+        	musicList: MUSIC_LIST,
             currentMusicItem: MUSIC_LIST[0]
         };
 	};
@@ -26,7 +29,8 @@ class App extends React.Component{
         return (
             <div>
                 <Header />
-                <Player currentMusicItem={this.state.currentMusicItem}></Player>
+                <Route render={() => <Player currentMusicItem={this.state.currentMusicItem}></Player>}></Route>
+                <Route path='/list' render={() => <MusicList musicList={this.state.musicList} currentMusicItem={this.state.currentMusicItem}></MusicList> }></Route>
             </div>
         );
     }
